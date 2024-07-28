@@ -26,7 +26,7 @@ export default function RootLayout({
               {
                 attribute: "class",
                 storageKey: "theme",
-                defaultTheme: "system",
+                defaultTheme: "dark",
                 enableSystem: true,
                 disableTransitionOnChange: true
               },

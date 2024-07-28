@@ -63,6 +63,9 @@
   * {
     @apply border-border;
   }
+  hmtl, body {
+    @apply h-full min-h-screen;
+  }
   body {
     @apply bg-background text-foreground;
   }
