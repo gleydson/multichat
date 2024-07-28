@@ -1,5 +1,4 @@
 import { BASE_URL } from "@/lib/utils";
-import { notFound } from "next/navigation";
 import parse from "node-html-parser";
 
 async function getLiveId(handle: string) {
@@ -27,7 +26,7 @@ export async function YoutubeChat({ handle }: { handle: string }) {
   const { hostname } = new URL(BASE_URL);
 
   if (!liveId) {
-    notFound()
+    return "No live stream found";
   }
 
   return (
