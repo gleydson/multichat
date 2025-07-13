@@ -9,7 +9,7 @@ async function getLiveId(handle: string) {
 	const doc = parse(html);
 
 	const linkElement = doc.querySelector('link[rel="canonical"]');
-	console.log('linkElement", linkElement);
+	console.log('linkElement', linkElement);
 	if (!linkElement) return;
 
 	const url = linkElement.getAttribute("href");
